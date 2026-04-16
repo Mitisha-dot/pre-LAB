@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>Simple Responsive Page</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background: green;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Navigation */
+        nav {
+            background: black;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: green;
+        }
+
+        /* Content with columns */
+        .content {
+            column-count: 2;
+            padding: 20px;
+        }
+
+        .box {
+            background: lightgray;
+            margin: 10px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        /* Transformation */
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        /* Animation */
+        h1 {
+            animation: fade 2s;
+        }
+
+        @keyframes fade {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        /* Responsive */
+        @media(max-width:600px) {
+            .content {
+                column-count: 1;
+            }
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+</nav>
+
+<div class="content">
+
+    <div class="box">
+        <i class="fas fa-laptop"></i>
+        <h3>Service 1</h3>
+        <p>Simple website design</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-mobile"></i>
+        <h3>Service 2</h3>
+        <p>Mobile friendly design</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Copyright 2026</p>
+</footer>
+
+</body>
+</html>
